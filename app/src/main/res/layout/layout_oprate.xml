@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        	android:id="@+id/oprate__linear_left"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+        >
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        
+            <LinearLayout
+        	android:id="@+id/oprate__linear_left_top"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical"
+        	>
+        
+		    	<WebView
+			    android:id="@+id/oprate_itemPoint"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginLeft="20dp"
+			     android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            
+            
+            
+
+        
+        
+        
+        
+            <LinearLayout 
+        	android:id="@+id/singselect__linear_left_bottom"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+        >
+		  		<RelativeLayout 
+		  		    android:id="@+id/layout_takephone"
+		  		    android:layout_width="match_parent"
+		  		    android:layout_height="match_parent"
+		  		    android:gravity="center"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <ImageButton 
+		  		        android:id="@+id/takephone_button"
+		  		        android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:background="#00000000" 
+		  		        />
+		  		</RelativeLayout>
+		  		</LinearLayout>
+		  		</LinearLayout>
+              </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:dm="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Activity.NeibuSelectActivity">
+
+    <LinearLayout
+        android:id="@+id/neibu_select_top_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/project_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="科目"
+            dm:titleTextSize="14sp" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+        android:id="@+id/jiaocai_menu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        dm:iconColor="#fff"
+        dm:listBgColor="#fff"
+        dm:titleBgColor="#4695E0"
+        dm:titleColor="#FFFFFF"
+        dm:titleHighLight="@color/colorPrimary"
+        dm:titleText="教材版本"
+        dm:titleTextSize="14sp" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/fence_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="分册"
+            dm:titleTextSize="14sp" />
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/different_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="难度"
+            dm:titleTextSize="14sp" />
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        <TextView
+            android:id="@+id/neibu_select_know"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="选择知识点"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="#4695E0"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        <TextView
+            android:id="@+id/start_select_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="获取知识点列表"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="#4695E0"
+            android:textColor="@color/white"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/neibu_select_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

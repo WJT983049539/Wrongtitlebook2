@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="xinshuyuan.com.wrongtitlebook">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:name=".Persenter.Appactionclass.WrongtitlebiikAppaction"
+        android:allowBackup="true"
+        tools:replace="android:icon"
+        android:theme="@style/notitle"
+        android:icon="@mipmap/launcher"
+        >
+
+        <!--tools:replace="android:theme"-->
+        <activity android:name=".View.Activity.Welcome"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".View.Activity.UserLoginActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".View.Activity.MainActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".View.Activity.SelectProjectUpPaper"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".View.Activity.CheckActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".View.Activity.PreviewTestQuestionActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".View.Activity.ShowWrongBookslistActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.WebViewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTopRight"
+            />
+        <activity android:name=".View.Activity.SetActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.SelscCondictiontActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".View.Activity.FinishActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.ExerciseTestActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.SelectSystemActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.EvaluateActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.Dialog_commentActivity"
+            android:theme="@android:style/Theme.Dialog"
+            />
+        <activity android:name=".View.Activity.CommentManageActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.CommentLookAndStatisticsActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".View.Activity.ShenSuActivity"
+            android:theme="@android:style/Theme.Dialog"
+
+            />
+        <activity android:name=".View.Activity.SHOWCommentFragmentActivity"
+            android:screenOrientation="landscape"
+            />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+            </application>
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+</manifest>

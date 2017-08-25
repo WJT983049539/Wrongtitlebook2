@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/fillblank_item_bg"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/sisi_showrong"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:paddingTop="6dp">
+        <TextView
+            android:id="@+id/SW_tile_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择题"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/liuliu_showrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:focusable="false">
+                <xinshuyuan.com.wrongtitlebook.Model.CustomView.MyWebView
+                    android:id="@+id/SW_tile_testTile_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layerType="software"
+                    android:layout_gravity="center_horizontal"
+                    >
+                </xinshuyuan.com.wrongtitlebook.Model.CustomView.MyWebView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

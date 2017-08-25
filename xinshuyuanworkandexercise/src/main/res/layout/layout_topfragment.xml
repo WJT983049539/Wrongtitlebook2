@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:dm="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xinshuyuan.xinshuyuanworkandexercise.View.Fragment.TopFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4695E0">
+
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/top_subject_dm_dropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="学科"
+            dm:titleTextSize="14sp"
+            />
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/top_jiaocai_dm_dropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="教材"
+            dm:titleTextSize="14sp"
+            />
+
+        <!--  这是显示左边的icon的   dm:drawableLeft="@drawable/ic_person_black_24dp"-->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/top_fence_dm_dropdown2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="分册"
+            dm:titleTextSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+
+        <!--<com.twiceyuan.dropdownmenu.DropdownMenu-->
+        <!--android:id="@+id/know_dm_dropdown3"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--dm:iconColor="#fff"-->
+        <!--dm:listBgColor="#fff"-->
+        <!--dm:titleBgColor="#4695E0"-->
+        <!--dm:titleColor="#FFFFFF"-->
+        <!--dm:titleHighLight="@color/colorPrimary"-->
+        <!--dm:titleText="知识点"-->
+        <!--dm:titleTextSize="14sp"-->
+        <!--/>-->
+        <TextView
+            android:id="@+id/top_know_selsct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:text="选择知识点"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/top_work_xuanti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="随机选题"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/beijing"
+    >"
+    <!-- 左边-开始 -->
+    <LinearLayout
+        android:id="@+id/oprate__linear_left"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+
+
+                <!-- 题干部分的容器-开始 -->
+                <LinearLayout
+                    android:id="@+id/oprate__linear_left_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <WebView
+                        android:id="@+id/oprate_itemPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+
+
+                <!-- 题干部分的容器-结束 -->
+                <!-- 答题部分的容器-开始 -->
+                <!-- 答题部分的容器-结束 -->
+                <!-- 提交部分的容器-开始 -->
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/singselect__linear_left_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_weight="2.5"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/layout_takephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        >
+                        <ImageButton
+                            android:id="@+id/takephone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="9"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                ></LinearLayout>
+
+        </LinearLayout>
+        <!-- 提交部分的容器-结束 -->
+    </LinearLayout>
+    <!-- 左边-结束 -->
+    <!-- 右边-开始 -->
+    <!-- 分割线 -->
+
+</LinearLayout>

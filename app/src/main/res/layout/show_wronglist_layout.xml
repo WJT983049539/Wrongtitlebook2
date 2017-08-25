@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dm="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="xinshuyuan.com.wrongtitlebook.View.Activity.ShowWrongBookslistActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.75"
+        android:background="#4695E0">
+
+
+        <TextView
+            android:id="@+id/know_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="知识点"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/dm_dropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="难度"
+            dm:titleTextSize="14sp"
+            />
+
+        <!--  这是显示左边的icon的   dm:drawableLeft="@drawable/ic_person_black_24dp"-->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/dm_dropdown2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="时间"
+            dm:titleTextSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+
+        <com.twiceyuan.dropdownmenu.DropdownMenu
+            android:id="@+id/dm_dropdown3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            dm:iconColor="#fff"
+            dm:listBgColor="#fff"
+            dm:titleBgColor="#4695E0"
+            dm:titleColor="#FFFFFF"
+            dm:titleHighLight="@color/colorPrimary"
+            dm:titleText="排序"
+            dm:titleTextSize="14sp"
+            />
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#ccc"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:src="@drawable/jiantou"
+            android:id="@+id/show_wrng_list_retuen"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/show_wrong_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

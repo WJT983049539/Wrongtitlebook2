@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#0080ff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="选择知识点"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/check_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:id="@+id/spinner_subject"
+                android:background="@null"/>
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:id="@+id/spinner_jiaocai"
+                android:background="@null"/>
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:id="@+id/spinner_fence"
+                android:background="@null"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/check_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <ListView
+                android:id="@+id/selsct_list_know_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="#6699ff" >
+            </ListView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+            <!-- 分割线 -->
+            <TextView
+                android:id="@+id/line_fengexian"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+            <ListView
+                android:id="@+id/selsct_list_know_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="#ffffcc"></ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

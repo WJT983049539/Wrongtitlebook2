@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#4695E0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="选择知识点"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+
+            />
+
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:background="@drawable/beijing">
+
+        <ListView
+            android:id="@+id/list_teacherbok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:listSelector="#84ffa3">
+
+        </ListView>
+        <!-- 分割线 -->
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            />
+        <!--分册-->
+        <ListView
+            android:id="@+id/list_fascicle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:listSelector="#ffffcc">
+        </ListView>
+        <!-- 分割线 -->
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            />
+        <ListView
+            android:id="@+id/list_oneknowloage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:listSelector="#ff6fff">
+
+        </ListView>
+        <!-- 分割线 -->
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            />
+        <ListView
+            android:id="@+id/list_twoknowloage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:listSelector="#f4aa57">
+
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--&gt;-->
+    <!--</LinearLayout>-->
+</LinearLayout>

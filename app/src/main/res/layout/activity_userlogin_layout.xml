@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student_bg"
+    >
+    <RelativeLayout
+        android:id="@+id/teacher_login_layout_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160.0dip"
+        >
+        <!--<TextView-->
+            <!--android:id="@+id/teacher_login_logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/student_bb"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/teacher_login_layout_account"
+        android:layout_width="524dip"
+        android:layout_height="164dip"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/teacher_login_layout_logo"
+        android:layout_marginTop="41.0dip"
+        android:background="@drawable/login_b1"
+        >
+        <RelativeLayout
+            android:id="@+id/teacher_login_layout_input"
+            android:layout_width="399.1dip"
+            android:layout_height="59dip"
+            android:background="@drawable/login_bg2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dip"
+            >
+            <TextView
+                android:id="@+id/teacher_login_text_account"
+                android:layout_width="12.5dip"
+                android:layout_height="11.2dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/x1"
+                android:layout_marginLeft="15.0dip"
+                />
+            <TextView
+                android:id="@+id/teacher_login_text_liner_one"
+                android:layout_width="1.8dip"
+                android:layout_height="25.8dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/xian"
+                android:layout_toRightOf="@id/teacher_login_text_account"
+                />
+            <EditText
+                android:id="@+id/student_login_edit_account"
+                android:layout_width="170.0dip"
+                android:layout_height="wrap_content"
+                android:hint="登录"
+                android:layout_toRightOf="@id/teacher_login_text_liner_one"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:id="@+id/student_login_text_password"
+                android:layout_width="9.8dip"
+                android:layout_height="11.2dip"
+                android:background="@drawable/x2"
+                android:layout_toRightOf="@id/student_login_edit_account"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/student_login_text_liner_two"
+                android:layout_width="1.8dip"
+                android:layout_height="25.8dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/xian"
+                android:layout_toRightOf="@id/student_login_text_password"
+                />
+
+            <EditText
+                android:id="@+id/student_login_edit_password"
+                android:layout_width="170.0dip"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/student_login_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/teacher_login_layout_input"
+            android:layout_centerInParent="true">
+
+
+            <Button
+                android:id="@+id/student_login_button_submit"
+                android:layout_width="39.1dip"
+                android:layout_height="42.5dip"
+                android:background="@drawable/button"
+                android:layout_centerVertical="true"
+                android:onClick="doLogin"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/student_login_button_set"
+            android:layout_width="33.8dip"
+            android:layout_height="39.8dip"
+            android:background="@drawable/shezhi"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="20.0dip"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

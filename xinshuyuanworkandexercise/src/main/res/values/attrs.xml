@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="pressureview">
+        <attr name="color" format="color" />
+        <attr name="bezierradio" format="float" />
+        <attr name="animduration" format="integer" />
+        <attr name="scale_ranger" format="float" />
+        <attr name="bezierradion_range" format="float" />
+    </declare-styleable>
+</resources>

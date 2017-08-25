@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xinshuyuan.com.wrongtitlebook.View.Activity.Welcome"
+    android:background="@drawable/welcomebeijing"
+    >
+
+
+
+    <WebView
+        android:id="@+id/welcome_web"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"></WebView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/textt"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/welcome_web"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/wowo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView.Large"
+       android:layout_below="@+id/imageView5"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

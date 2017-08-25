@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dm="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#0080ff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="上传错题"
+            android:textSize="25sp"
+            android:gravity="left"
+            android:paddingTop="20dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+    <!-- 分割线 -->
+    <TextView
+        android:id="@+id/line_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/group">
+                <TextView
+                    android:id="@+id/up_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="选择上传条件"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="#6666ff"
+
+                    />
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="选择难度:"
+                        android:textSize="20sp"
+                        android:id="@+id/textView"
+                        android:background="#97ff97"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:paddingTop="7dp"
+                        android:rating="0"
+                        android:stepSize="1.0"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView"
+                        android:layout_toEndOf="@+id/textView"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginStart="33dp">
+
+                    </RatingBar>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.85"
+                    android:layout_height="match_parent"
+                    android:text="选择图片:"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="#97ff97"
+                    />
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.26"
+                    android:src="@drawable/tuku"
+                   />
+
+
+
+
+            </LinearLayout>
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+                <xinshuyuan.com.wrongtitlebook.Model.Common.ExpandGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:horizontalSpacing="4dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="4dp"/>
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.74"
+                    android:text="答案与分析:"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:background="#97ff97"
+                    />
+
+                <EditText
+                    android:id="@+id/answer_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/commit_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tijiao_button_background"
+                        android:layout_marginLeft="232dp"
+                        android:layout_marginStart="232dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:id="@+id/native_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/commit_button2"
+                        android:layout_toRightOf="@+id/commit_button2"
+                        android:layout_toEndOf="@+id/commit_button2"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginStart="120dp"
+                        android:background="@drawable/returnbutton_bg"
+                        android:layout_alignParentTop="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

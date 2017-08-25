@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">信数源课后系统</string>
+    <string name="title_alert">提示消息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="xiaoyu">&#060;</string>
+    <string name="xiaoyudengyu">&#8804;</string>
+    <string name="yu">&#38;</string>
+    <string name="wenhao">"?"</string>
+    <string name="jiazai">"转换中..."</string>
+    <string name="commit">提交</string>
+    <string name="Native">取消</string>
+</resources>
